@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALISANDO NÚMEROS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>ANALISADOR DE NÚMEROS</h1>
+    </header>
+    <section>
+        <div>
+            Escreva um número entre 1 - 100:
+            <input type="number" name="fnum" id="fnum" onkeypress="handleKeyPress(event)">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><br><select name="flista" id="flista" size="6"></select>
+            <br><br><input type="button" value="Finalizar" onclick="finalizar()">
+            <input type="button" value="Limpar" onclick="limpar()">
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&COPY; GTECHSUPORTE</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
